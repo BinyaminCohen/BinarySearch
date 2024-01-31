@@ -25,10 +25,18 @@ class BinarySearch(object):
         return target, NOT_FOUND
 
 
+def check_res(num, idx):
+    if idx != NOT_FOUND:
+        print(f"{num} exists in num list and its index is {idx}.")
+
+    else:
+        print(f"{num} does not exist in num list so return {idx}.")
+
+
 num, idx = BinarySearch().binary_search([-1, 0, 3, 5, 9, 12], 9)
 
-if idx != NOT_FOUND:
-    print(f"{num} exists in num list and its index is {idx}.")
+check_res(num, idx)
 
-else:
-    print(f"{num} does not exist in num list so return {idx}.")
+num, idx = BinarySearch().binary_search([-1, 0, 3, 5, 9, 12], 2)
+
+check_res(num, idx)
