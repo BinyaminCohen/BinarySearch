@@ -40,3 +40,4 @@ check_res(num, idx)
 num, idx = BinarySearch().binary_search([-1, 0, 3, 5, 9, 12], 2)
 
 check_res(num, idx)
+
